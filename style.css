@@ -6,12 +6,21 @@
  [class*="col-"]{
     border: 1px solid black;
     padding: 10px;
-    background-color: lightpink;   
+    background-color: lightpink;
+    position: relative;   
 }
 
 #nested{
     height: 180px;
     border:none;
     border-right: 2px solid white;
-    background-color: lightcoral;  
+    background-color: lightcoral; 
+    position: relative; 
+}
+
+[class*="col-"] > p{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);  
 }
